@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background-color: #e9f3f8;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    display: block;
+    margin-left: 5%;
+    width: 150px;
+}
+
+.titulo{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 50%;
+}
+
+.parrafo{
+    display: flex;
+    margin-left: 3%;
+    margin-right: 50%;
+}
+
+.Aire{
+    position: relative;
+    margin-left: 55%;
+    margin-top: -13%;
+    height: 20rem;
+    width: 35rem;
+}
+
+.Caldera{
+    height: 20rem;
+    width: 25rem;
+    position: relative;
+    margin-left: 50%;
+    margin-top: -150px;
+}
+
+.carrusel{
+    display: flex;
+    position: relative;
+    height: 15rem;
+    width: 30rem;
+    margin-left: 7%;
+    margin-top: -15rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+ background-color: #222;
+ margin-bottom: -100px;
+
+}
+
+
+
+
