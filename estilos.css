@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #e9f3f8;
@@ -7,55 +16,83 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
 .logo {
     display: block;
     margin-left: 5%;
-    width: 150px;
+    width: 10rem;
+    padding: 1%;
 }
 
-.titulo{
+.about-container{
     display: flex;
-    margin-left: 15%;
-    margin-right: 50%;
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+    height: 20px;
+    margin-bottom: 1rem;
 }
 
-.parrafo{
+.text{
     display: flex;
-    margin-left: 3%;
-    margin-right: 50%;
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+    height: 70px;
+    margin-bottom: 7rem;
 }
 
 .Aire{
-    position: relative;
+    position: absolute;
     margin-left: 55%;
-    margin-top: -13%;
+    margin-top: -11%;
     height: 20rem;
-    width: 35rem;
+    width: 33rem;
 }
 
 .Caldera{
-    height: 20rem;
-    width: 25rem;
+    height: 15rem;
+    width: 20rem;
     position: relative;
-    margin-left: 50%;
-    margin-top: -150px;
+    margin-left: 49%;
+    margin-top: -4%;
 }
 
 .carrusel{
     display: flex;
-    position: relative;
+    position: absolute;
     height: 15rem;
     width: 30rem;
     margin-left: 7%;
-    margin-top: -15rem;
+    margin-top: -8rem;
     margin-bottom: 1rem;
 }
 
-footer{
- background-color: #222;
- margin-bottom: -100px;
-
-}
+/*Seccion del Footer*/
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+  }
 
 
 
