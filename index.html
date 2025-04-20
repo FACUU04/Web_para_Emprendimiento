@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FALCAR - Servicio Técnico</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CSS y Javascript-->
+  <link rel="stylesheet" href="estilos.css">
+  <script src="contact.js"></script>
+
+</head>
+<body>
+  <!-- Encabezado y navegación -->
+  <header class="bg-dark py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="img/logo.png" alt="Logo Falcar" class="logo">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#trabajos">Trabajos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sobre Nosotros -->
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="section-title text-start">¿Quiénes somos?</h2>
+          <p class="lead text-start">
+            Falcar es un emprendimiento familiar. Nos especializamos en instalación, reparación y mantenimiento de calderas, climatizadores de pileta y aires acondicionados.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="img/img combinada.jpg" alt="trabajo" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Servicios</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="service-box">
+            <img src="img/1.png" alt="Reparación" class="service-icon">
+            <h4>Reparación & Mantenimiento</h4>
+            <p>Reparación, instalación y mantenimiento de calderas y aires acondicionados de todas las marcas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <img src="img/2.png" alt="Repuestos" class="service-icon">
+            <h4>Repuestos Originales</h4>
+            <p>Trabajamos con repuestos originales para garantizar calidad y durabilidad.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <img src="img/3.png" alt="Garantía" class="service-icon">
+            <h4>Garantía Escrita</h4>
+            <p>Brindamos garantía escrita en todos nuestros trabajos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Trabajos -->
+<section id="trabajos" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Nuestros Trabajos</h2>
+
+    <div id="trabajosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+      <div class="carousel-inner">
+
+        <!-- Imagen 1 -->
+        <div class="carousel-item active">
+          <img src="img/4.jpg" class="d-block w-100 img-fluid" alt="Instalación de Caldera">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Instalación de Caldera</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="carousel-item">
+          <img src="img/6.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Mantenimiento de Climatizador</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="carousel-item">
+          <img src="img/reparacionHeladera.jpg" class="d-block w-100 img-fluid" alt="Reparación de Aire Acondicionado">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Reparación de Heladera, Carga de gas y reprogramacion de plaqueta</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="carousel-item">
+          <img src="img/MantenimientoCondensacion.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Mantenimiento Caldera de Condensacion</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="carousel-item">
+          <img src="img/7.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Mantenimiento de Caldera</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="carousel-item">
+          <img src="img/instalacion.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Instalacion de Caldera</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 7 -->
+        <div class="carousel-item">
+          <img src="img/5.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Instalacion de Radiadores</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 8 -->
+        <div class="carousel-item">
+          <img src="img/instalacionRadiadores.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Instalacion de Radiadores</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 9 -->
+        <div class="carousel-item">
+          <img src="img/InstalacionRadiadores2.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Instalacion de Radiadores</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 10 -->
+        <div class="carousel-item">
+          <img src="img/MantenimientoAireportatil.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Mantenimiento Aire Acondicionado Portatil</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 11 -->
+        <div class="carousel-item">
+          <img src="img/MantenimientoAireportatil2.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Mantenimiento Aire Acondicionado Portatil</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 12 -->
+        <div class="carousel-item">
+          <img src="img/caldera_pie.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Mantenimiento a Caldera de pie</h5>
+          </div>
+        </div>
+
+        <!-- Imagen 13 -->
+        <div class="carousel-item">
+          <img src="img/MantenimientoCalderaCondensacion.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Mantenimiento a Caldera de Condensacion</h5>
+          </div>
+        </div>
+
+         <!-- Imagen 14 -->
+         <div class="carousel-item">
+          <img src="img/caldera.jpg" class="d-block w-100 img-fluid" alt="Mantenimiento de Climatizador">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5 class="text-white">Mantenimiento a Caldera</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4"> 
+      <!-- Columna izquierda -->
+      <div class="col-12 col-md-6">
+        <h2 class="section-title text-md-start text-center">Contacto</h2>
+        <p class="lead text-md-start text-center">
+          📍 CABA, Zona sur - Buenos Aires<br>
+          📞 Tel: (+54) 11 6996-5628<br>
+          📧 Email: servicefalcar25@gmail.com
+        </p>
+      </div>
+
+      <!-- Columna derecha (formulario) -->
+      <div class="col-12 col-md-6">
+        <form action="https://formsubmit.co/servicefalcar25@gmail.com" method="POST" class="main_form w-100">
+          <div class="mb-3">
+            <input class="form-control contactus" placeholder="Nombre" type="text" name="Name" required>
+          </div>
+          <div class="mb-3">
+            <input class="form-control contactus" placeholder="Teléfono" type="tel" name="Phone" required>
+          </div>
+          <div class="mb-3">
+            <input class="form-control contactus" placeholder="Asunto" type="text" name="Affair" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control contactusmess" placeholder="Mensaje" name="Message" rows="4" required></textarea>
+          </div>
+          <div>
+            <button class="btn send_btn w-100" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p class="footer">&copy; 2025 FALCAR - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
