@@ -10,6 +10,11 @@ body {
     height: 90px;
     width: 90px;
   }
+
+  .logo2{
+    height: 9rem;
+    width: 11rem;
+  }
   
   .section-title {
     font-size: 2rem;
