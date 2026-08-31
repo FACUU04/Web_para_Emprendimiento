@@ -1,16 +1,54 @@
-# React + Vite
+# Falcar - Servicio Técnico
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web oficial de **Falcar**, un emprendimiento especializado en la instalación, reparación y mantenimiento de calderas, climatizadores y aires acondicionados en Zona Sur y CABA.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **React.js** (Estructura de componentes)
+* **CSS3 / Flexbox / Grid** (Estilos y diseño Mobile First)
+* **React Icons** (Iconografía)
+* **Elfsight Widget** (Integración de reseñas de Google)
 
-## React Compiler
+## Estructura del Proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+src/
+├── components/          
+│   ├── Footer.jsx       # Contacto y formulario
+│   ├── Mapa.jsx         # Mapa de cobertura
+│   ├── Navbar.jsx       # Menú fijo y responsive
+│   ├── Opiniones.jsx    # Módulo de Google Reviews
+│   ├── Servicios.jsx    # Tarjetas de servicios
+│   ├── Sobre.jsx        # Historia del emprendimiento
+│   ├── TopSlider.jsx    # Hero section principal
+│   └── Trabajos.jsx     # Carrusel de trabajos
+│
+├── estilos/             
+│   ├── Footer.css
+│   ├── Navbar.css
+│   └── main.css         # Estilos globales y hero
+│
+├── App.jsx              # Componente raíz
+└── main.jsx             # Punto de entrada
 
-## Expanding the ESLint configuration
+## Características Principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Navbar Fijo:** Menú oscuro con diseño responsive y botón hamburguesa.
+* **Hero Section:** Portada (100vh) alineada a la izquierda con botones de acceso rápido y WhatsApp directo.
+* **Sección de Servicios:** Tarjetas interactivas con consejos de mantenimiento.
+* **Galería en Movimiento:** Carrusel infinito de trabajos reales.
+* **Opiniones:** Sincronizado automáticamente con Google Reviews mediante Elfsight.
+
+## Ejecución Local
+
+1. Clonar el repositorio:
+   git clone https://github.com/TU_USUARIO/tu-repositorio.git
+
+2. Instalar dependencias:
+   npm install
+
+3. Iniciar desarrollo:
+   npm run dev
+
+## Licencia
+
+Desarrollado para **Falcar Service**. Todos los derechos reservados.
