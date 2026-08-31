@@ -1,0 +1,78 @@
+/* TRABAJOS CSS*/
+
+.trabajos {
+  background: #fdfdfd; 
+  padding: 60px 0;
+  text-align: center;
+}
+
+.trabajos h2 {
+  color: #0a1128;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Efecto de difuminado en los bordes para que las fotos "aparezcan" de a poco */
+.carousel::before,
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+}
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, #fdfdfd, transparent);
+}
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, #fdfdfd, transparent);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px; /* Espacio entre fotos */
+  width: max-content;
+  animation: scroll 40s linear infinite; 
+}
+
+/* Frena el carrusel si el usuario le pasa el mouse por arriba */
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-track img {
+  width: 260px; /* Tamaño ideal para que entren 1 y media en el celu */
+  height: 320px;       
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombreado elegante */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Ajustes para PC */
+@media (min-width: 768px) {
+  .trabajos {
+    padding: 80px 0;
+  }
+  .carousel-track img {
+    width: 350px;
+    height: 400px;
+  }
+}

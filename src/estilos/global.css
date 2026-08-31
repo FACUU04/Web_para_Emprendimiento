@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+main {
+  color: #222;
+  /* Eliminamos el margin-top para que encaje con el navbar */
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,42 @@
+.sobre {
+  background: #f8f8f8;
+  padding: 80px 10%;
+}
+
+.sobre-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.sobre .texto {
+  flex: 1 1 400px;
+}
+
+.sobre .texto h2 {
+  color: rgb(4, 9, 50);
+  margin-bottom: 20px;
+}
+
+.sobre .texto p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.sobre .imagen {
+  flex: 1 1 400px;
+}
+
+.sobre .imagen img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .sobre-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}

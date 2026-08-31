@@ -1,104 +1,175 @@
-main {
-  margin-top: 100px;
-  color: #222;
-  font-family: "Poppins", sans-serif;
-}
-
+/*  HERO SECTION */
 .top-slider {
-  background: rgb(177, 178, 180);
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-  overflow: hidden;
   position: relative;
+  background-image: url('/fondo.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  text-align: left; 
+  color: #fff;
+  padding-top: 80px; 
+  padding-left: 10%; /* Mismo margen lateral que  Navbar */
+  overflow: hidden;
 }
 
-.top-slider p {
-  margin: 0;
+.top-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.top-slider > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  /* Le sacamos el padding porque ya lo tiene el top-slider */
+  max-width: 650px; /* Lo hacemos un poquito más angosto para que el texto baje de línea prolijo */
   animation: fadeIn 0.8s ease-in;
 }
 
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start; /* Botones alineados a la izquierda */
+  flex-wrap: wrap;
+}
+
+/* Botones más chicos y refinados */
+.btn-primary, .btn-whatsapp {
+  padding: 10px 20px; /* Reducimos el relleno interno */
+  font-size: 0.95rem; /* Achicamos penitas la fuente */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #d32f2f;
+  color: white;
+  border: 2px solid #d32f2f;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #d32f2f;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+  border: 2px solid #25d366;
+}
+
+.btn-whatsapp:hover {
+  background-color: transparent;
+  color: #25d366;
+}
+
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajuste móvil para que en celular sí quede centrado (suele verse mejor en pantallas chicas) */
+@media (max-width: 768px) {
+  .top-slider {
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .hero-buttons {
+    justify-content: center;
   }
 }
 
+
+/* SOBRE NOSOTROS  */
 .sobre {
   background: #f8f8f8;
   padding: 80px 10%;
 }
-
 .sobre-contenido {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
 }
-
 .sobre .texto {
   flex: 1 1 400px;
 }
-
 .sobre .texto h2 {
   color: rgb(4, 9, 50);
   margin-bottom: 20px;
 }
-
 .sobre .texto p {
   line-height: 1.6;
   font-size: 1.1rem;
 }
-
 .sobre .imagen {
   flex: 1 1 400px;
 }
-
 .sobre .imagen img {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
 }
 
+
+/* SERVICIOS  */
 .servicios {
   padding: 80px 10%;
   text-align: center;
 }
-
 .servicios h2 {
   color: rgb(4, 9, 50);
   margin-bottom: 50px;
 }
-
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* minmax(280px) asegura que en celular ocupen todo el ancho y no se aplasten */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
-
 .servicio {
   background: #f4f4f4;
   padding: 30px;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .servicio:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
-
 .servicio img {
   width: 80px;
   margin-bottom: 15px;
 }
-
 .servicio h4 {
   color: rgb(4, 9, 50);
   margin-bottom: 10px;
@@ -114,37 +185,30 @@ main {
   color: rgb(4, 9, 50);
   transition: background 0.3s ease;
 }
-
 .servicios-info:hover {
   background: #eef6ff;
 }
-
 .servicios-info h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: rgb(4, 9, 50);
   text-align: center;
 }
-
 .servicios-info p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 15px;
 }
-
 .servicios-info ul {
   list-style: none;
   padding-left: 0;
   margin-top: 20px;
 }
-
 .servicios-info ul li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
   font-weight: 500;
 }
-
 .servicios-info ul li::before {
   content: "✔";
   position: absolute;
@@ -153,15 +217,13 @@ main {
   font-weight: bold;
 }
 
-
+/* Tarjetas ¿Sabías qué? */
 .sabias-que-contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
   margin-top: 40px;
 }
-
 .sabias-que-card {
   display: flex;
   align-items: center;
@@ -169,25 +231,15 @@ main {
   background: #eaf5ff;
   border-radius: 15px;
   padding: 20px;
-  max-width: 500px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: left;
   transition: transform 0.3s ease;
 }
-
 .sabias-que-card:hover {
   transform: translateY(-5px);
 }
-
-.sabias-que-texto {
-  flex: 1;
-}
-
-.icono-lampara {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
+.sabias-que-texto { flex: 1; }
+.icono-lampara { font-size: 1.5rem; margin-bottom: 5px; }
 .sabias-que-img {
   width: 130px;
   height: 130px;
@@ -195,80 +247,60 @@ main {
   border-radius: 10px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .sabias-que-card {
-    flex-direction: column;
-    text-align: center;
-    max-width: 90%;
-  }
 
-  .sabias-que-img {
-    width: 100%;
-    max-width: 250px;
-  }
-}
-
+/*  TRABAJOS (Galería) */
 .trabajos {
   background: #f8f8f8;
   padding: 80px 10%;
   text-align: center;
 }
-
 .trabajos h2 {
   color: rgb(4, 9, 50);
   margin-bottom: 40px;
 }
-
 .carousel {
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
-
 .carousel-track {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scroll 35s linear infinite; 
+  animation: scroll 40s linear infinite; 
 }
-
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
 .carousel-track img {
-  width: 400px;
-  height: 450px;       
+  width: 300px;
+  height: 350px;       
   border-radius: 10px;
   object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-
-
-/* Animación continua sin cortes */
 @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 
+/* DONDE ESTAMOS */
 .donde-estamos {
   padding: 80px 10%;
   text-align: center;
   background: #f8f8f8;
   border-top: 1px solid #ddd;
 }
-
 .donde-estamos h2 {
   color: rgb(4, 9, 50);
   margin-bottom: 20px;
 }
-
 .donde-estamos p {
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
-
 .mapa-container {
   width: 100%;
   height: 400px;
@@ -276,21 +308,53 @@ main {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .mapa-container iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 768px) {
-  .sobre-contenido {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .carousel-track img {
-    width: 250px;
+/*  RESPONSIVE GENERAL */
+@media (max-width: 768px) {
+  .sobre-contenido { 
+    flex-direction: column; 
+    text-align: center; 
   }
+  .carousel-track img { 
+    width: 250px; 
+    height: 300px; 
+  }
+  .sabias-que-card { 
+    flex-direction: column; 
+    text-align: center; 
+  }
+  .sabias-que-img { 
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+  }
+  .hero-content h1 { 
+    font-size: 1.8rem; 
+  }
+}
+
+/* OPINIONES (Widget de Google Reviews) */
+.opiniones {
+  padding: 80px 10%;
+  text-align: center;
+  background: #ffffff; 
+}
+
+.opiniones h2 {
+  color: rgb(4, 9, 50);
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.widget-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* El widget suele adaptarse solo, pero esto asegura que no se desborde */
+  overflow: hidden; 
 }

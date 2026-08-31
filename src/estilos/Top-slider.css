@@ -1,0 +1,114 @@
+
+.hero-section {
+  position: relative;
+  background-image: url('/fondo.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 75vh; /* Ocupa el 75% del alto de la pantalla al entrar */
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Esta capa oscura hace que el texto se lea siempre bien */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65); 
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  max-width: 800px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  color: #f1f1f1;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap; /* Clave para celular: si no entran al lado, bajan automáticamente */
+}
+
+/* Estilos de los botones */
+.btn-primary,
+.btn-whatsapp {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #d32f2f; /* Un rojo profesional similar al de tu logo */
+  color: white;
+  border: 2px solid #d32f2f;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #d32f2f;
+}
+
+.btn-whatsapp {
+  background-color: #25d366; /* Verde exacto de WhatsApp */
+  color: white;
+  border: 2px solid #25d366;
+}
+
+.btn-whatsapp:hover {
+  background-color: transparent;
+  color: #25d366;
+}
+
+/* Ajustes automáticos para pantallas más grandes (Tablets y PC) */
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+  .btn-primary,
+  .btn-whatsapp {
+    font-size: 1.1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

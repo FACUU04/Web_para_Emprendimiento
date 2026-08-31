@@ -40,6 +40,7 @@
     font-weight: 500;
     margin-left: 40px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
 }
 
 .navbar a::before{
@@ -94,6 +95,7 @@
     margin: 15px 0;
     opacity: 0;
     transform: translateY(-10px);
+    text-decoration: none;
   }
 
   .navbar.open a {

@@ -1,29 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-*{
+/* index.css */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-a {
-  text-decoration: none;
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  overflow-x: hidden; /* Evita scroll horizontal indeseado */
 }
 
-html, body, #root {
-  height: 100%;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
+/* Scroll suave al hacer clic en los links del navbar */
 html {
   scroll-behavior: smooth;
 }
