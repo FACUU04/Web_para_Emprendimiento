@@ -41,7 +41,7 @@ src/
 ## Ejecución Local
 
 1. Clonar el repositorio:
-   git clone https://github.com/TU_USUARIO/tu-repositorio.git
+   git clone https
 
 2. Instalar dependencias:
    npm install
