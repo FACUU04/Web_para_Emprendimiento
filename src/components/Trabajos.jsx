@@ -3,10 +3,11 @@ import "../estilos/trabajos.css"
 
 const Trabajos = () => {
   const imagenes = [
-    "/4.jpg", "/6.jpg", "/instalacion.jpg", "/5.jpg", "/calderacambio.jpeg",
-    "/calderacambio2.jpeg", "/climatizador.jpeg", "/climatizador2.jpeg",
-    "/termostato.jpeg", "/termostato2.jpeg", "/quemador.jpeg", "/Zentraly.jpeg",
-    "/Zentralycolocado.jpeg", "/facu.jpeg"
+    "/termostato2.jpeg", "/instalacion.jpeg", "/calderax3.jpeg", "/instalacion aire.jpeg", "/refrigeracion.jpeg",
+    "/instalacion radiadores.jpeg", "/climatizador.jpeg", "/termica1.jpeg", "/termica2.jpeg",
+    "/termostato.jpeg", "/termostato3.jpeg", "/instalacion2.jpeg", "/instalacion3.jpeg", "/instalacion4.jpeg", "/instalacion5.jpeg", "/reparacion.jpeg",
+    "/mantenimiento.jpeg", "/facu.jpeg", "/instalacion radiadores2.jpeg", "/instalacion radiadores3.jpeg", "/zentralt.jpeg", "/isntalacionprimatec.jpeg",
+     "/condensacion.jpeg",
   ];
 
   return (

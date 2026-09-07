@@ -12,7 +12,7 @@ const Main = () => {
       <Sobre />
       <Servicios />
       <Trabajos />
-      <Mapa />
+      
     </main>
   );
 };

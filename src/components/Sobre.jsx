@@ -16,7 +16,7 @@ const Sobre = () => {
           </p>
         </div>
         <div className="imagen">
-          <img src="/img combinada.jpg" alt="Trabajo Falcar" />
+          <img src="/promocional.jpeg" alt="Trabajo Falcar" />
         </div>
       </div>
     </section>

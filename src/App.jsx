@@ -5,9 +5,9 @@ import Sobre from "./components/Sobre";
 import Servicios from "./components/Servicios";
 import Trabajos from "./components/Trabajos";
 import Opiniones from "./components/Opiniones"; 
-import Mapa from "./components/Mapa";
 import Footer from "./components/Footer";
 import "./estilos/global.css";
+import Productos from "./components/Productos";
 
 const App = () => {
   return (
@@ -17,9 +17,9 @@ const App = () => {
         <TopSlider />
         <Sobre />
         <Servicios />
+        <Productos />
         <Trabajos />
         <Opiniones /> 
-        <Mapa />
       </main>
       <Footer />
     </div>

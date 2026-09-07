@@ -16,9 +16,9 @@ const Navbar = () => {
       </button>
 
       <nav className={`navbar ${open ? 'open' : ''}`}>
-        <a href="#top-slider">Inicio</a>
         <a href="#sobre">Sobre Nosotros</a>
         <a href="#servicios">Servicios</a>
+        <a href="#productos">Ventas</a> {/* ACÁ SUMAMOS EL NUEVO ENLACE */}
         <a href="#trabajos">Nuestros Trabajos</a>
         <a href="#footer">Contacto</a>
       </nav>
